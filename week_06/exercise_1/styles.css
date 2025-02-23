@@ -1,0 +1,19 @@
+a {
+    font-size: 40px;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+@media (max-width: 800px) { 
+    .flex-container {
+        justify-content: center;
+    }
+}
