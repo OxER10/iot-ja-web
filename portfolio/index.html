@@ -2,24 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <title>Oskari Järvinen - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <title>Oskari Järvinen - Portfolio</title>
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">Oskari Järvinen</a>
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#experience">Experience</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    
-  </header>
-  <p>I am a web developer!</p>
-  <p>I ROCK 🔥🔥🔥</p>
-  <script src="scripts/script.js"></script>
+  <nav>
+    <div class="left">
+      <a href="/">Oskari Järvinen</a>
+    </div>
+    <div class="right">
+      <a href="https://github.com/OxER10" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:oskari.jarvinen@tuni.fi">Email</a>
+    </div>
+  </nav>
+  <main>
+    <section class="introduction">
+      <div class="text">
+        <h2>Moikka! Olen Oskari</h2>
+        <p>Olen ohjelmistokehityksen opiskelija, joka on intohimoinen tekniikan ja koodauksen maailmasta. Opiskelen ohjelmistokehitystä, joka on antanut minulle vankan pohjan erilaisiin ohjelmointikieliin ja tekniikoihin. Olen erityisesti perehtynyt C++-ohjelmointikieleen, joka on tarjonnut minulle monipuolisia mahdollisuuksia kehittää tehokkaita ja optimoiduita sovelluksia.</p>
+        <p>Opiskeluni aikana olen kehittänyt laajaa ymmärrystä erilaisista ohjelmointiparadigmaista ja työkaluista, mikä on tehnyt minusta monipuolisen ohjelmoijan. Olen kiinnostunut uusien teknologioiden oppimisesta ja niiden soveltamisesta käytännön projekteihin. Työskentelyssäni arvostan tiimityötä ja ongelmanratkaisua, ja pyrin aina kehittymään sekä ammatillisesti että henkilökohtaisesti.</p>
+        <p>Tulevaisuudessa haluan jatkaa uraani ohjelmistokehityksen parissa ja olen valmis ottamaan vastaan haastavia projekteja, jotka vaativat innovatiivisuutta ja teknisyyttä. Olen vakuuttunut, että monipuolinen taustani ja intohimo ohjelmointiin tekevät minusta arvokkaan lisän tiimiin.</p>
+        <div class="links">
+          <a href="#skills">Taidot</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Yhteystiedot</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="images/oskari_jarvinen_portrait.jpg" alt="Oskari Järvinen Muotokuva">
+      </div>
+    </section>
+    <section id="skills" class="skills-section">
+      <h2>Taidot</h2>
+      <div class="text">
+        Osaan käyttää näitä ohjelmointikieliä. Eniten osaamista ja kokemusta minulta löytyy C++ kielestä
+      </div>
+      <div class="cells">
+        <div class="cell">
+          <img src="images/cpp_logo.png" alt="C++ logo">
+          <span>C++</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/c_sharp.png" alt="C# logo">
+          <span>C#</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/html5_logo.png" alt="HTML logo">
+          <span>HTML</span>
+        </div>
+        <div class="cell">
+          <img src="images/css3_logo.png" alt="CSS logo">
+          <span>CSS</span>
+        </div>
+        <div class="cell">
+          <img src="images/javascript_logo.png" alt="JavaScript logo">
+          <span>Javascript</span>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio</h2>
+      <div class="group">
+        <div class="project-details">
+          <img src="images/portfolio-mygrep.png">
+          <p>Mygrep</p>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="text">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sint repudiandae ratione exercitationem saepe distinctio cumque quaerat nostrum laborum? Rem adipisci natus eos nemo reprehenderit, cumque nostrum enim commodi. Eum, enim vero eveniet doloremque sed veniam. Doloremque explicabo non reprehenderit expedita! Accusamus mollitia repellendus dolorum officiis libero quod deleniti cum."
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat fugit maiores atque architecto saepe tenetur quasi reiciendis illum sint doloremque alias inventore, asperiores maxime pariatur totam hic assumenda repudiandae, iusto quisquam nisi! Eaque doloremque perspiciatis minus voluptate dicta. A ratione autem dolor iure libero numquam voluptatem nobis laborum et corporis.
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
