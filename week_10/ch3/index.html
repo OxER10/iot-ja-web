@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+</head>
+<body>
+    <p>How many fingers am I holding up?</p>
+    <form>
+        <input type="text" id="userInput">
+    </form>
+    <p id="response"></p>
+    <button id="guessButton">GUESS</button>
+    <script>
+        var number = Math.floor(Math.random() * 5);
+        document.getElementById('guessButton').addEventListener('click', function() {
+            if (document.getElementById('userInput').value == number) {
+                document.getElementById('response').style.color = '#009900';
+                document.getElementById('response').textContent = "CORRECT";
+            }
+            else {
+                document.getElementById('response').style.color = '#990000';
+                document.getElementById('response').textContent = `Try again! It was ${number}`;
+            }
+        });
+    </script>
+</body>
+</html>

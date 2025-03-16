@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Multiplication Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="gameH">Multiplication Game</h1>
+        <div id="game" class="game">
+            <!-- You can add as many questions as you like without breaking 
+            by copying divs with id=question -->
+            <div id="question" class="question">
+                <a id="calculation"></a>
+                <input id="answer" type="number" placeholder="0">
+                <a id="smiley"></a>
+            </div>
+            <div id="question" class="question">
+                <a id="calculation"></a>
+                <input id="answer" type="number" placeholder="0">
+                <a id="smiley"></a>
+            </div>
+            <div id="question" class="question">
+                <a id="calculation"></a>
+                <input id="answer" type="number" placeholder="0">
+                <a id="smiley"></a>
+            </div>
+            <!-- Copy divs with id=question till here -->
+            <p id="feedback"></p>
+            <button id="checkButton">Check</button>
+            <button id="resetButton">Reset</button>
+            <button id="showButton">Show</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
