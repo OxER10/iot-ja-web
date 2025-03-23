@@ -12,6 +12,8 @@ body {
     font-size: 20px;
 }
 
+body, html { overflow-x:hidden; }
+
 header {
     background-color: #FFFFFFE6;
     padding: 20px 0;
@@ -120,7 +122,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
-    width: 100%;
 }
 
 .forecast-h2 {
@@ -202,7 +203,6 @@ main {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 15px;
-        width: 100%;
     }
     .details {
         flex-direction: column;
