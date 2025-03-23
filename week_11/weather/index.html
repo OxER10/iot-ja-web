@@ -1,13 +1,86 @@
+<!-- Oskari Järvinen -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Refreshes the page evry 30minutes-->
+    <meta http-equiv="refresh" content="3600">
     <link rel="stylesheet" href="style.css">
     <title>Weather</title>  
 </head>
 <body>
-    <p>Moikka :D</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Weather</h1>
+                <p>
+                    <span>Local Time:</span>
+                    <span id="localTime">23.3.2025 18:24</span>
+                </p>
+            </div>
+            <div Class="search-bar">
+                <input id="searchBar" type="text" placeholder="Search with city, country, lat/long or ip">
+                <button id="searchButton" type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h2 class="forecast-h2">Weather Right Now</h2>
+        <section class="current-weather">
+            <h2>
+                <span id="city">Loading...</span>
+                <span>-</span>
+                <span id="country">Loading...</span>
+            </h2>
+            <p style="margin-bottom: 10px;">
+                <span class="title">Last updated: </span>
+                <span id="lastUpdated">2025-03-23 17:00</span>
+                <span>Local time</span>
+            </p>
+            <div class="weather-icon">
+                <img id="weatherIcon" src="images/sunny.png">
+            </div>
+            <div class="temperature">
+                <span id="celsius">...°C</span>
+                <span>/</span>
+                <span id="fahrenheit">...°F</span>
+            </div>
+            <div id="condition" class="condition">Loading...</div>
+            <div class="details">
+                <div class="detail-item">
+                    <p class="title">Humidity</p>
+                    <p id="humidity">...%</p>
+                </div>
+                <div class="detail-item">
+                    <p class="title">Wind Speed</p>
+                    <p id="windSpeed">...m/s</p>
+                </div>
+                <div class="detail-item">
+                    <p class="title">Feels Like</p>
+                    <p>
+                        <span id="celsiusFeels">...°C</span>
+                        <span>/</span>
+                        <span id="fahrenheitFeels">...°F</span>
+                    </p>
+                </div>
+                <div class="detail-item">
+                    <p class="title">Percipitation</p>
+                    <p id="precipitation">...mm</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="forecast-h2">Forecast</h2>
+        <section class="forecast" id="forecastContainer">
+            <!-- JavaSript laittaa sääennusteen kohdat tähän  -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Oskari Järvinen</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
