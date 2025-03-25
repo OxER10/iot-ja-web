@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="container">
+        <H1>Countdown Timer</H1>
+        <div class="timer">
+            <div class="timer-item">
+                <h3 id="daysDisplay">00</h3>
+                <p>Days</p>
+            </div>
+            <div class="timer-item">
+                <h3 id="hoursDisplay">00</h3>
+                <p>Hours</p>
+            </div>
+            <div class="timer-item">
+                <h3 id="minutesDisplay">00</h3>
+                <p>Minutes</p>
+            </div>
+            <div class="timer-item">
+                <h3 id="secondsDisplay">00</h3>
+                <p>Seconds</p>
+            </div>  
+        </div>
+        <h2>Your date</h2>
+        <div class="input">
+            <div class="input-item">
+                <select id="yearInput">
+                    <option value="">Year</option>
+                </select>
+            </div>
+            <div class="input-item">
+                <select id="monthInput">
+                    <option value="">Month</option>
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
+            <div class="input-item">
+                <select id="dayInput">
+                    <option value="">Day</option>
+                </select>
+            </div>
+            <div class="input-item">
+                <select id="hourInput">
+                    <option value="">Hour</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="submitBtn">Submit</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+<script defer src="js/lib/dayjs/dayjs.min.js"></script>
+<script defer src="js/lib/dayjs/plugin/duration.js"></script>
+<script type="module" defer src="js/specific/countdown.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Oskari Järvinen</p>
+</footer>

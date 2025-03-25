@@ -1,0 +1,113 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #FFFFFF;
+    background: radial-gradient(#414141, #000000);
+}
+
+h1 {
+    margin: 15px 0px;
+}
+
+h2 {
+    margin: 35px 0px 10px;
+}
+
+select {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer-item {
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 60px;
+}
+
+.timer-item h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.timer-item p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #b1b1b1;
+}
+
+.container {
+    background: radial-gradient(#272727, #000000);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001A;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-item {
+    box-sizing: border-box;
+    width: 24%;
+}
+
+.input-item select {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        min-height: 0;
+    }
+    .input {
+        flex-direction: column;
+    }
+
+    .input-item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .timer {
+        min-width: 50px;
+    }
+
+    .timer h3 {
+        font-size: 1.5em;
+    }
+    .input-item input {
+        width: 120px;
+    }
+}
